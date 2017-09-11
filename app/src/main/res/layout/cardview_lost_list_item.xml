@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+    <TextView
+        android:id="@+id/lost_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:height="28dp"
+        android:drawableLeft="@drawable/icon_flash"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:textAppearance="@style/CBText.Small"
+        />
+
+    <RelativeLayout
+        android:id="@+id/lost_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lost_list_time"
+        android:background="@drawable/selector_lostlist_item_bg"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        >
+
+        <TextView
+            android:id="@+id/lost_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="%s"
+            android:textAppearance="@style/CBText.Max"
+            />
+
+        <TextView
+            android:id="@+id/lost_list_sex_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lost_list_name"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/lost_list_name"
+            android:text="%s  %d岁"
+            android:textAppearance="@style/CBText.Small"
+            />
+
+        <TextView
+            android:id="@+id/lost_list_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/icon_location2"
+            android:text="%s"
+            android:textAppearance="@style/CBText.Small.Gray"
+            />
+
+        <FrameLayout
+            android:id="@+id/lost_frame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost_list_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/icon_location"/>
+
+            <TextView
+                android:id="@+id/lost_list_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="%s"
+                android:textAppearance="@style/CBText.Small"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lost_frame2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost_frame1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/icon_book"/>
+
+            <TextView
+                android:id="@+id/lost_list_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:gravity="top"
+                android:text="%s"
+                android:textAppearance="@style/CBText.Small"/>
+        </FrameLayout>
+
+
+        <GridLayout
+            android:id="@+id/lost_frame3"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lost_frame2"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:columnCount="3"
+            >
+
+            <ImageView
+                android:id="@+id/lost_list_pic1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/shape_line_bg"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/lost_list_pic2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/shape_line_bg"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/lost_list_pic3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/shape_line_bg"
+                android:scaleType="centerCrop"
+                />
+        </GridLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/lost_content"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:background="@drawable/selector_lostlist_item_btn"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/lost_btn_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_lostlist_item_btn"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <TextView
+                android:id="@+id/lost_list_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_share"
+                android:gravity="center"
+                android:text="@string/share"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_line_bg"/>
+
+        <FrameLayout
+            android:id="@+id/lost_btn_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_lostlist_item_btn"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <TextView
+                android:id="@+id/lost_list_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_comment"
+                android:gravity="center"
+                android:text="@string/comment"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

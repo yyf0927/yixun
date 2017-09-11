@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="fill_vertical"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".activity.imagepick.ImagePickActivity">
+
+    <GridView
+        android:id="@+id/pick_image_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/pick_image_grid_horizontal_margin"
+        android:layout_marginRight="@dimen/pick_image_grid_horizontal_margin"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/pick_image_grid_internal_space"
+        android:listSelector="@drawable/selector_bg_gridview_item"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/pick_image_grid_internal_space"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pick_image_bottom_bar_height"
+        android:layout_weight="0"
+        android:background="@color/pick_image_bottom_bar_bg_color">
+
+        <LinearLayout
+            android:id="@+id/show_all_image_folders"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/pick_image_horizontal_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/show_all_image_folders_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/pick_image_bottom_bar_text_size"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_spinner"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/preview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pick_image_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/preview_format"
+            android:textColor="@color/selector_preview_btn"
+            android:textSize="@dimen/pick_image_bottom_bar_text_size"/>
+    </RelativeLayout>
+</LinearLayout>

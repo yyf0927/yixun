@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+
+        <requestFocus/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <com.netease.study.exercise.widget.GalleryWidget
+            android:id="@+id/grid_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:columnCount="4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            >
+
+            <TableRow
+                android:minHeight="60dp"
+                >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/name"
+                    android:textAppearance="@style/CBText.Medium"/>
+
+                <EditText
+                    android:id="@+id/upload_edit_name"
+                    style="@style/CBEditText.Right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="25dp"
+                    android:hint="@string/hintmust"/>
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/shape_line_bg"/>
+
+            <TableRow
+                android:minHeight="60dp"
+                >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="@string/sex"
+                    android:textAppearance="@style/CBText.Medium"/>
+
+                <RadioGroup
+                    android:id="@+id/upload_radio_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checkedButton="0"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="32dp">
+
+                    <RadioButton
+
+                        android:id="@+id/upload_sex_male"
+                        style="@style/CBRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:text="@string/male"/>
+
+                    <RadioButton
+                        android:id="@+id/upload_sex_female"
+                        style="@style/CBRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"/>
+                </RadioGroup>
+
+                <!--<ToggleButton-->
+                <!--android:id="@+id/upload_btn_sex"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:checked="true"-->
+                <!--android:textOff="女"-->
+                <!--android:textOn="男"/>-->
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@drawable/shape_line_bg"/>
+
+            <TableRow
+                android:minHeight="60dp"
+                >
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:maxLength="3"
+                    android:text="@string/tall"
+                    android:textAppearance="@style/CBText.Medium"/>
+
+                <EditText
+                    android:id="@+id/upload_edit_height"
+                    style="@style/CBEditText.Right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="25dp"
+                    android:hint="@string/hint_must_cm"
+                    android:inputType="number"
+                    android:maxLength="3"/>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/upload_tv_birthtime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/birthday"
+                android:textAppearance="@style/CBText.Medium"
+                />
+
+            <Button
+                android:id="@+id/upload_btn_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/upload_tv_birthtime"
+                android:background="@drawable/selector_btn_alpha"
+                android:hint="@string/hint_birthday"
+                android:textAppearance="@style/CBText.Small"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/upload_tv_losttime"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/lostdate"
+                android:textAppearance="@style/CBText.Medium"/>
+
+            <Button
+                android:id="@+id/upload_btn_lostday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/upload_tv_losttime"
+                android:background="@drawable/selector_btn_alpha"
+                android:hint="@string/hint_lostDate"
+                android:textAppearance="@style/CBText.Small"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/upload_tv_lost"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/lostlocation"
+                android:textAppearance="@style/CBText.Medium"/>
+
+            <Button
+                android:id="@+id/upload_btn_lostlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/upload_tv_lost"
+                android:background="@drawable/selector_btn_alpha"
+                android:hint="@string/hint_pleasechoose"
+                android:textAppearance="@style/CBText.Small"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="25dp"
+            android:stretchColumns="1"
+            >
+
+            <TableRow android:minHeight="60dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/phone"
+                    android:textAppearance="@style/CBText.Medium"/>
+
+                <EditText
+                    android:id="@+id/upload_edit_contact"
+                    style="@style/CBEditText.Right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/hintmust"
+                    android:inputType="phone"
+                    android:maxLength="11"/>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:stretchColumns="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/characteristic"
+                android:textAppearance="@style/CBText.Medium"/>
+
+            <EditText
+                android:id="@+id/upload_edit_detail1"
+                style="@style/CBEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="@string/hint_characteristic"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:stretchColumns="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clothescharacteristic"
+                android:textAppearance="@style/CBText.Medium"/>
+
+            <EditText
+                android:id="@+id/upload_edit_detail2"
+                style="@style/CBEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="@string/hint_clothescharacteristic"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:stretchColumns="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voicecharacteristic"
+                android:textAppearance="@style/CBText.Medium"/>
+
+            <EditText
+                android:id="@+id/upload_edit_detail3"
+                style="@style/CBEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="@string/hint_voiceCharacteristic"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_line_bg"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:stretchColumns="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thanksMoney"
+                android:textAppearance="@style/CBText.Medium"/>
+
+            <EditText
+                android:id="@+id/upload_edit_bonus"
+                style="@style/CBEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:hint="@string/hint_thanksMoney"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:drawableLeft="@drawable/icon_warning"
+                android:text="@string/thanksmoney_desc"
+                android:textAppearance="@style/CBText.Tiny"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/shape_line_bg"/>
+
+
+        <Button
+            android:id="@+id/btn_post"
+            style="@style/CBButton.Drak.Full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/publish"/>
+
+    </LinearLayout>
+</ScrollView>

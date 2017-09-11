@@ -1,0 +1,32 @@
+{
+  "buildFiles": [
+    "/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/Android.mk"
+  ],
+  "cleanCommands": [
+    "/Users/liangjian/Downloads/android-ndk-r10d/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/Android.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDEBUG\u003d1 APP_PLATFORM\u003dandroid-15 NDK_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "libraries": {
+    "crash_handler-debug-mips": {
+      "buildCommand": "/Users/liangjian/Downloads/android-ndk-r10d/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/Android.mk APP_ABI\u003dmips NDK_ALL_ABIS\u003dmips NDEBUG\u003d1 APP_PLATFORM\u003dandroid-15 NDK_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/build/intermediates/ndkBuild/debug/lib /Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj/local/mips/libcrash_handler.so",
+      "toolchain": "toolchain-mips",
+      "abi": "mips",
+      "artifactName": "crash_handler",
+      "files": [
+        {
+          "src": "/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/src/main/cpp/native_crash_handler.cc",
+          "flags": "\"-fpic\" \"-fno-strict-aliasing\" \"-finline-functions\" \"-ffunction-sections\" \"-funwind-tables\" \"-fmessage-length\u003d0\" \"-fno-inline-functions-called-once\" \"-fgcse-after-reload\" \"-frerun-cse-after-loop\" \"-frename-registers\" \"-no-canonical-prefixes\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-g\" \"-DNDEBUG\" \"-fomit-frame-pointer\" \"-funswitch-loops\" \"-finline-limit\u003d300\" \"-I/Users/liangjian/Downloads/android-ndk-r10d/sources/cxx-stl/system/include\" \"-I/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-I/Users/liangjian/Downloads/android-ndk-r10d/platforms/android-15/arch-mips/usr/include\""
+        }
+      ],
+      "output": "/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj/local/mips/libcrash_handler.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-mips": {
+      "cppCompilerExecutable": "/Users/liangjian/Downloads/android-ndk-r10d/toolchains/mipsel-linux-android-4.8/prebuilt/darwin-x86_64/bin/mipsel-linux-android-g++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cc"
+  ]
+}

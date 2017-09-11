@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorThemePrimary">#fff</color>
+    <color name="colorThemePrimaryDark">#fff</color>
+    <color name="colorThemeAccent">#000</color>
+
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="transparent">#00000000</color><!-- 透明 -->
+    <color name="transparent_black_20">#33000000</color>
+    <color name="grey">#333333</color>
+
+    <color name="color_gray_d9d9d9">#d9d9d9</color>
+
+
+    <!--个人信息颜色-->
+    <color name="detail_bgc">#eeeeee</color>
+    <color name="cb_divide_color">#d9d9d9</color>
+    <color name="cb_text_gray_light">#ccc4c2</color>
+    <color name="cb_text_gray_dark">#999391</color>
+    <color name="cb_text_detail_gray">#362e2b</color>
+    <color name="cb_text_gray">#999391</color>
+    <color name="cb_text_black">#362e2b</color>
+    <color name="cb_buttn_black">#4d3932</color>
+    <color name="cb_buttn_gray">#998e8a</color>
+
+    <color name="cb_bg_black">#f2ebe6</color>
+    <color name="cb_bg_gray_light">#eeeeee</color>
+
+    <color name="dimgrey">#696969</color>
+
+    <color name="green_normal">#40df9a</color>
+    <color name="green_40">#663FC380</color>
+
+    <color name="gray_32">#323232</color>
+    <color name="gray_8832">#88323232</color>
+
+    <color name="gh_text_color">#4d3932</color>
+
+    <color name="gh_bg_button_normal">#4d3932</color>
+    <color name="gh_bg_button_press">#b7b1b1</color>
+    <color name="gh_text_button_normal">#FFFFFF</color>
+    <color name="gh_text_button_press">#FFFFFF</color>
+
+    <color name="gh_gb_send_button_normal">#b7b1b1</color>
+    <color name="gh_gb_send_button_press">#e5dfdf</color>
+    <color name="gh_text_send_button_normal">#362e2b</color>
+    <color name="gh_text_send_button_press">#362e2b</color>
+
+    <color name="pick_image_bottom_bar_bg_color">#6A5855</color>
+    <color name="pick_image_preview_button_disable">#A2A2A2</color>
+
+    <color name="window_background">#FFF5F5F5</color>
+
+    <color name="layout_bg_color">#eeeeee</color>
+    <color name="setting_row_bg_color">#ffffff</color>
+</resources>

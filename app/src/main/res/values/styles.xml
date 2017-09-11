@@ -1,0 +1,159 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme" parent="Theme.AppCompat.Light">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">@color/colorThemePrimary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <!--item name="colorPrimaryDark">@color/colorThemePrimaryDark</item-->
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/colorThemeAccent</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="actionMenuTextColor">@android:color/black</item>
+        <item name="titleTextAppearance">@style/CBText.Small</item>
+        <item name="android:titleTextAppearance" tools:targetApi="lollipop">@style/CBText.Small</item>
+        <item name="android:actionMenuTextColor">#000</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="searchViewStyle">@style/CBSearchViewStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CBSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="goIcon">@drawable/icon_search_gray</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme">
+        <!-- Customize your theme here. -->
+    </style>
+    <!--<item name="android:titleTextStyle">@style/gh_title_text_appearace</item>-->
+
+    ·
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gh_text_color</item>
+        <item name="android:actionMenuTextColor">@color/gh_text_color</item>
+        <item name="android:actionMenuTextAppearance">@style/gh_action_menu_text_appearace</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="StartActivityTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@drawable/app_start</item>
+    </style>
+
+    <style name="gh_action_menu_text_appearace">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CBText.Small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/cb_text_black</item>
+    </style>
+    <style name="CBButton.Drak.Full" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_btn_dark</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Login.EditText.Light" parent="CBText.Small">
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="gh_title_text_appearace">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gh_text_color</item>
+    </style>
+
+    <style name="image_pick_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/button_gap</item>
+    </style>
+
+    <style name="normal_button_style">
+        <item name="android:layout_height">@dimen/gh_button_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/gh_text_button_normal</item>
+    </style>
+
+    <style name="CBText.Medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cb_text_black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CBEditText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/cb_text_gray_light</item>
+        <item name="android:textColor">@color/cb_text_black</item>
+    </style>
+
+    <style name="CBEditText.Right" parent="CBEditText">
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="CBRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/selector_checkbox</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="CBText.Tiny" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/cb_text_gray</item>
+    </style>
+
+    <style name="CBButton.Drak" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_btn_dark</item>
+        <item name="android:minHeight">40dp</item>
+    </style>
+
+    <style name="CBText.Max" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/cb_text_black</item>
+    </style>
+
+    <style name="CBText.Small.Gray" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/cb_text_gray_dark</item>
+    </style>
+
+    <style name="horizontal_light_thin_divider">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/color_gray_d9d9d9</item>
+    </style>
+
+    <style name="ShareDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

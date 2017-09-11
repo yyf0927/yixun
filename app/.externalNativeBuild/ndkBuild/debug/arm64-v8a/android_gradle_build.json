@@ -1,0 +1,32 @@
+{
+  "buildFiles": [
+    "/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/Android.mk"
+  ],
+  "cleanCommands": [
+    "/Users/liangjian/Downloads/android-ndk-r10d/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/Android.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/build/intermediates/ndkBuild/debug/lib clean"
+  ],
+  "libraries": {
+    "crash_handler-debug-arm64-v8a": {
+      "buildCommand": "/Users/liangjian/Downloads/android-ndk-r10d/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/Android.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj NDK_LIBS_OUT\u003d/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/build/intermediates/ndkBuild/debug/lib /Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj/local/arm64-v8a/libcrash_handler.so",
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "crash_handler",
+      "files": [
+        {
+          "src": "/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/src/main/cpp/native_crash_handler.cc",
+          "flags": "\"-fpic\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector\" \"-no-canonical-prefixes\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-g\" \"-DNDEBUG\" \"-fomit-frame-pointer\" \"-fstrict-aliasing\" \"-funswitch-loops\" \"-finline-limit\u003d300\" \"-I/Users/liangjian/Downloads/android-ndk-r10d/sources/cxx-stl/system/include\" \"-I/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app\" \"-DANDROID\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-I/Users/liangjian/Downloads/android-ndk-r10d/platforms/android-21/arch-arm64/usr/include\""
+        }
+      ],
+      "output": "/Users/liangjian/AndroidstudioProjects/NeteaseGoHomeAndroid/app/.externalNativeBuild/ndkBuild/debug/obj/local/arm64-v8a/libcrash_handler.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-arm64-v8a": {
+      "cppCompilerExecutable": "/Users/liangjian/Downloads/android-ndk-r10d/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64/bin/aarch64-linux-android-g++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cc"
+  ]
+}

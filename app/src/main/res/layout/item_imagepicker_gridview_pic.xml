@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pick_image_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <CheckBox
+        android:id="@+id/cb_pick_image_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:button="@drawable/selector_img_checkbox"
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="5dp"/>
+
+</FrameLayout>

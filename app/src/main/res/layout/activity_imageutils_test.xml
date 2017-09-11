@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest0Click"
+                android:text="@string/show_glide_sdcard_size"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest1Click"
+                android:text="@string/prefetch"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest2Click"
+                android:text="@string/clear_disk_cache"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/net_image_round_glide"
+                android:layout_width="@dimen/test_button_height"
+                android:layout_height="@dimen/test_button_height"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest3Click"
+                android:text="@string/set_round_img"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/net_image_circle_glide"
+                android:layout_width="@dimen/test_button_height"
+                android:layout_height="@dimen/test_button_height"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest4Click"
+                android:text="@string/set_circle_img"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/res_image_round_glide"
+                android:layout_width="@dimen/test_button_height"
+                android:layout_height="@dimen/test_button_height"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest5Click"
+                android:text="@string/set_res_round_img"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/res_image_circle_glide"
+                android:layout_width="@dimen/test_button_height"
+                android:layout_height="@dimen/test_button_height"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest6Click"
+                android:text="@string/set_res_circle_img"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/sdcard_image_round_glide"
+                android:layout_width="@dimen/test_button_height"
+                android:layout_height="@dimen/test_button_height"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest7Click"
+                android:text="@string/set_sdcard_round_img"/>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/sdcard_image_circle_glide"
+                android:layout_width="@dimen/test_button_height"
+                android:layout_height="@dimen/test_button_height"
+                android:background="@android:color/transparent"/>
+            <Button
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/test_button_height"
+                android:onClick="onTest8Click"
+                android:text="@string/set_sdcard_circle_img"/>
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

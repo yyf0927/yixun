@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion COMPILE_SDK_VERSION
+    buildToolsVersion BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        applicationId "com.netease.study.exercise"
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0.0"
+    }
+    signingConfigs {
+        myConfig {
+            storeFile file("study.keystore")
+            storePassword "neteasestudy"
+            keyAlias "study.keystore"
+            keyPassword "neteasestudy"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs "libs"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.myConfig
+        }
+        debug {
+            signingConfig signingConfigs.myConfig
+        }
+    }
+
+//    testOptions {
+//        unitTests.returnDefaultValues = true
+//    }
+
+//    externalNativeBuild {
+//        ndkBuild {
+//            path 'Android.mk'
+//        }
+//    }
+
+}
+
+repositories {
+    jcenter()
+}
+
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile "junit:junit:${JUNIT_VERSION}"
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    androidTestCompile 'com.android.support:support-annotations:23.4.0'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+    compile project(':htimagepicker')
+
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile "com.android.support:appcompat-v7:${APPCOMPAT_V7_VERSION}"
+    compile "com.android.support:design:${DESIGN_SUPPORT_VERSION}"
+    compile "com.android.support:recyclerview-v7:${RECYCLER_VIEW_VERSION}"
+    compile 'com.alibaba:fastjson:1.2.9'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.netease.nis.plugin:bugrpt:latest.release'
+//    compile 'com.netease.hearttouch:ht-imagepicker:1.0.1'
+
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile project(path: ':ptr')
+}

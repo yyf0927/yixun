@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="53dp"
+    android:background="@color/detail_bgc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        style="@style/Login.EditText.Light"
+        android:id="@+id/edtRePwdMobile"
+        android:drawableLeft="@drawable/ic_mobile"
+        android:maxLength="11"
+        android:hint="@string/login_common_mobile"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        style="@style/Login.EditText.Light"
+        android:id="@+id/edtRePwd"
+        android:drawableLeft="@drawable/ic_pwd"
+        android:maxLength="8"
+        android:hint="@string/login_common_pwd"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_rePwd"
+        android:layout_width="match_parent"
+        style="@style/CBButton.Drak.Full"
+        android:maxLines="1"
+        android:layout_below="@+id/edtRePwd"
+        android:text="@string/login_common_forget"
+        />
+</LinearLayout>

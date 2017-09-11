@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/icon_camera"
+        app:showAsAction="always"/>
+    <!--android:orderInCategory="100"-->
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share_title"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_imageutils_test"
+        android:title="@string/imageutils_test"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_image_pick"
+        android:title="@string/image_pick_test"
+        app:showAsAction="never"/>
+</menu>

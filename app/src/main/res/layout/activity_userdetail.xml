@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/detail_bgc"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="244.5dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <com.netease.study.exercise.widget.CircleImageView
+            android:id="@+id/user_detail_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/portrait_normal"
+            />
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_detail_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/CBText.Small"
+            />
+
+        <TextView
+            android:id="@+id/user_sign_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name_text"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/CBText.Tiny"
+            />
+
+        <LinearLayout
+            android:id="@+id/operation_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/user_sign_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13.5dp"
+            android:background="@drawable/shape_layout_add"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/operation_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/operation_add"
+                />
+
+            <TextView
+                android:id="@+id/operation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="@string/friend"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/center_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+
+            <TextView
+                android:id="@+id/contect_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.5dp"
+                android:text="@string/contact"
+                android:textAppearance="@style/CBText.Small"
+                />
+
+            <TextView
+                android:id="@+id/context_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17.5dp"
+                android:layout_toRightOf="@+id/contect_call"
+                android:textAppearance="@style/CBText.Small.Gray"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/cb_divide_color"/>
+
+        <RelativeLayout
+            android:id="@+id/seachmsg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.5dp"
+                android:text="@string/hisLostList"
+                android:textAppearance="@style/CBText.Small"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.5dp"
+                android:src="@drawable/icon_system_next"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

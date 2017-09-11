@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true"
+		android:state_pressed="true"
+		android:drawable="@drawable/shape_btn_gray_dark" />
+
+    <item android:state_enabled="true"
+		android:state_checked="false"
+		android:drawable="@drawable/shape_btn_black"/>
+
+
+	<item android:state_enabled="false"
+		android:state_checked="false"
+		android:drawable="@color/color_gray_d9d9d9"/>
+
+</selector>

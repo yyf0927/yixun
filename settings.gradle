@@ -1,0 +1,7 @@
+include ':app'
+include ':htimagepicker'
+include ':ptr'
+
+
+project(':htimagepicker').projectDir = file('module/htimagepicker')
+project(':ptr').projectDir = file('module/ptr')

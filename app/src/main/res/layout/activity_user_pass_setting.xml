@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_layout_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_row_height"
+        android:layout_marginTop="20dp"
+        android:background="@color/setting_row_bg_color"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_row_left_right_margin"
+            android:text="@string/mobile_phone_num"
+            android:textAppearance="@style/CBText.Medium" />
+
+        <TextView
+            android:id="@+id/user_pass_phone_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_row_left_right_margin"
+            android:text="@string/no_mobile_phone_num"
+            android:textAppearance="@style/CBText.Medium" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cb_divide_color" />
+
+    <RelativeLayout
+        android:id="@+id/activity_user_pass_setting_rt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_row_height"
+        android:background="@color/setting_row_bg_color"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_row_left_right_margin"
+            android:text="@string/login_common_pwd"
+            android:textAppearance="@style/CBText.Medium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/setting_row_left_right_margin"
+            android:src="@drawable/icon_more_109" />
+    </RelativeLayout>
+
+</LinearLayout>

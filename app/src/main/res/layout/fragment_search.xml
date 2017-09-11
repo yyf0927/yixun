@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cb_divide_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/gender"
+                android:textAppearance="@style/CBText.Medium"/>
+
+
+            <RadioGroup
+                android:id="@+id/search_missing_radio_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="22dp">
+
+                <RadioButton
+                    android:id="@+id/search_missing_sex_male"
+                    style="@style/CBRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:checked="true"
+                    android:text="@string/gender_male"/>
+
+                <RadioButton
+                    android:id="@+id/search_missing_sex_female"
+                    style="@style/CBRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_female"/>
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cb_divide_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/age"
+            android:textAppearance="@style/CBText.Medium"/>
+
+        <EditText
+            android:id="@+id/search_missing_age_end_et"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/age_edit_hint_max"
+            android:inputType="number"
+            android:textAppearance="@style/CBEditText"/>
+
+        <View
+            android:id="@+id/search_missing_age_fgx"
+            android:layout_width="30dp"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@id/search_missing_age_end_et"
+            android:background="@drawable/shape_btn_black"/>
+
+
+        <EditText
+            android:id="@+id/search_missing_age_start_et"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/search_missing_age_fgx"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/age_edit_hint_min"
+            android:inputType="number"
+            android:textAppearance="@style/CBEditText" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cb_divide_color"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/search_missing_lost_time_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/lost_time"
+            android:textAppearance="@style/CBText.Medium"/>
+
+
+        <Button
+            android:id="@+id/search_missing_lost_time_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_toRightOf="@id/search_missing_lost_time_tip"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/lost_time_edit_hint"
+            android:textAppearance="@style/CBEditText"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cb_divide_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/search_missing_lost_place_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/lost_place"
+            android:textAppearance="@style/CBText.Medium"/>
+
+
+        <Button
+            android:id="@+id/search_missing_lost_place_bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_toRightOf="@id/search_missing_lost_place_tip"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/lost_place_edit_hint"
+            android:textAppearance="@style/CBEditText"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cb_divide_color"/>
+
+
+    <Button
+        android:id="@+id/search_missing_screening_bt"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_btn_black"
+        android:text="@string/screening"
+        android:textAppearance="@style/CBText.Medium"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

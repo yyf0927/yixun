@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.imagepick.ImagePickActivity">
+
+    <item
+        android:id="@+id/action_finish"
+        android:enabled="true"
+        android:title="@string/pick_image_finish_with_number"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="18sp"
+    android:textColor="@color/background_material_dark"
+    android:ellipsize="marquee" android:gravity="center_vertical"
+    android:background="@drawable/selector_lostlist_item_btn" android:paddingLeft="10.0dip"
+    android:paddingRight="10.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:minHeight="40dp"
+    android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />
